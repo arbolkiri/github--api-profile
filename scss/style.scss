@@ -44,8 +44,11 @@
  * GENERAL
  */
 
-img {max-width:75%;
+img {
+width: auto;
+max-width:100%;
  padding: auto;
+
  }
 
 body {
@@ -58,8 +61,32 @@ text-decoration: underline;
 }
 
 .left{
+    position: absolute;
+    display: inline-block;
+    min-width: 85%;
     margin-left: 50px;
     margin-top: 40px;
+    margin-bottom: 40px;
+}
+.left.vcard::after{
+  
+}
+
+.right {
+    
+    position: absolute;
+    display: inline-block;
+    min-width: 50%;
+    transform: translateX(315px);
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+}
+
+.vcard {
+    font-size: 14px;
+    font-family: sans-serif;
+
 }
 
 
